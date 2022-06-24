@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".DangKiActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:id="@+id/goccc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/logovi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="0dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:src="@drawable/note"
+                    android:id="@+id/imgavatar"
+                    android:paddingBottom="5dp"
+                    android:layout_width="200dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="200dp"
+                    app:civ_border_color="#FFFFFF"
+                    app:civ_border_width="2dp" />
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/logovi"
+                android:layout_marginTop="0dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="15dp">
+
+                <LinearLayout
+                    android:id="@+id/noidung"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="THÊM GHI CHÚ"
+                        android:textColor="#FF5722"
+                        android:textSize="25dp"
+                        android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/edtRegUser"
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:background="@drawable/background_edttextdo"
+                            android:hint="Tiêu Đề"
+                            android:padding="14dp"
+                            android:textColor="@color/grey_dam"
+                            android:textSize="17dp"
+                            android:textColorHint="@color/grey_dam" />
+
+
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/dangKi_etEmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:background="@drawable/background_edttextdo"
+                            android:hint="Ngày "
+                            android:padding="14dp"
+                            android:textColor="@color/grey_dam"
+                            android:textSize="17dp"
+                            android:inputType="date"
+                            android:textColorHint="@color/grey_dam" />
+
+                        <EditText
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/edtRegPassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+
+                            android:background="@drawable/background_edttextdo"
+                            android:hint="Nội Dung"
+
+                            android:textSize="17dp"
+                            android:padding="14dp"
+                            android:textColor="@color/grey_dam"
+                            android:textColorHint="@color/grey_dam" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <Button
+                            android:id="@+id/btnReg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="60dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+
+                            android:background="@drawable/button_bgv"
+                            android:text="THÊM"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white" />
+
+                        <Button
+                            android:id="@+id/btnRelay"
+                            android:layout_width="wrap_content"
+                            android:layout_height="60dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_uiv"
+                            android:text="HỦY"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

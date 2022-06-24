@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="15dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginBottom="5dp"
+    >
+
+    <RelativeLayout
+        android:id="@+id/vien"
+        android:background="@drawable/hahaha"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/avataruser"
+            android:layout_width="80dp"
+            android:paddingLeft="0dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/note"
+            android:layout_height="80dp"/>
+
+        <LinearLayout
+            android:id="@+id/lis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="0dp"
+            android:layout_toStartOf="@+id/update"
+            android:layout_toEndOf="@+id/avataruser"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nameuser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="Name name"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/sophone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="0905196052"
+                android:textColor="#FFFFFF"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/tuoi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="13/02/2002"
+                android:textColor="#FFFFFF"
+                android:textSize="13dp" />
+
+        </LinearLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+
+            android:id="@+id/update"
+            android:layout_width="30dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginEnd="5dp"
+            android:layout_toStartOf="@+id/delete"
+            android:paddingLeft="0dp"
+            android:src="@drawable/ic_baseline_handyman_24" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/delete"
+            android:layout_width="30dp"
+            android:layout_height="80dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginEnd="2dp"
+            android:paddingLeft="0dp"
+            android:src="@drawable/ic_baseline_delete_24" />
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>

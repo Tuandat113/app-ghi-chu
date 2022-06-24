@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "419975540586",
+    "project_id": "lap02listvewfirebase",
+    "storage_bucket": "lap02listvewfirebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:419975540586:android:9bcee7eaefaa4cf7f87f13",
+        "android_client_info": {
+          "package_name": "com.example.lap02listvewfirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "419975540586-d2cf5suqrbsj01754431oolri58acfe3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyByYY-wtE0eUqHOXcfXTqINesdokbcEEII"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "419975540586-d2cf5suqrbsj01754431oolri58acfe3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

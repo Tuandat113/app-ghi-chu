@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".LottieActivyti">
+
+    <LinearLayout
+        android:padding="20dp"
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/timkiem"
+            android:layout_width="260dp"
+            android:layout_height="50dp"
+            android:hint="Tìm Kiếm "
+            >
+
+        </EditText>
+        <ImageButton
+
+            android:id="@+id/mic"
+            android:src="@drawable/ic_baseline_mic_24"
+            android:layout_width="50dp"
+            android:layout_height="50dp">
+
+        </ImageButton>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listuser"
+
+        android:layout_width="match_parent"
+        android:layout_height="650dp"
+        android:layout_margin="5dp"
+        android:layoutAnimation="@anim/layout_left_to_right"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:layout_editor_absoluteX="5dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

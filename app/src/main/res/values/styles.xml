@@ -1,0 +1,6 @@
+<resources>
+    <style name="DialogTheme">
+        <item name="android:windowEnterAnimation">@anim/popup</item>
+        <item name="android:windowExitAnimation">@anim/popdown</item>
+    </style>
+</resources>
